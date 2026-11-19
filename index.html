@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090c">
+  <meta name="description" content="Criamos sites rápidos, bonitos e pensados para atrair clientes e vender mais na internet.">
+  <title>Nextora Digital — Sites que vendem por você</title>
+  <style>
+    :root{color-scheme:dark;--bg:#08090c;--text:#f5f5f7;--muted:#a5a7b0;--line:rgba(255,255,255,.13);--glass:rgba(255,255,255,.065);--accent:#c8ff62;--purple:#8c72ff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 74% 26%,rgba(95,66,210,.17),transparent 34%),radial-gradient(ellipse at 20% 88%,rgba(100,138,42,.10),transparent 30%),var(--bg);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent 78%)}
+    .wrap{width:min(1160px,calc(100% - 48px));margin:auto;position:relative}.navbar{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07)}.brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-size:15px;font-weight:700;letter-spacing:-.04em}.brand img{width:43px;height:43px;object-fit:contain}.brand span{font-size:17px}.brand b{font-weight:500;color:#aaa}.nav-links{display:flex;align-items:center;gap:10px}.glass{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 17px;border:1px solid var(--line);border-radius:999px;background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.035));box-shadow:inset 0 1px rgba(255,255,255,.11),0 8px 28px rgba(0,0,0,.16);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#e6e6eb;text-decoration:none;font-size:13px;transition:transform .2s,border-color .2s,background .2s}.glass:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.12)}.glass.cta{color:#111;background:linear-gradient(135deg,#fff,#e9e9ed);border-color:rgba(255,255,255,.8);font-weight:700;box-shadow:0 5px 26px rgba(255,255,255,.10),inset 0 1px rgba(255,255,255,.9)}
+    .hero{min-height:calc(100vh - 92px);display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:54px;padding:80px 0 100px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.045);color:#c9cad0;font-size:11px;letter-spacing:.11em;text-transform:uppercase}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 13px var(--accent)}h1{max-width:660px;margin:26px 0 19px;font-size:clamp(52px,7.3vw,92px);line-height:.99;letter-spacing:-.075em;font-weight:650}h1 span{color:transparent;background:linear-gradient(100deg,#fff 10%,#c9c7d6 52%,#9e8cff 100%);background-clip:text;-webkit-background-clip:text}.lead{max-width:550px;margin:0;color:#b2b3bc;font-size:clamp(16px,1.65vw,19px);line-height:1.75;letter-spacing:-.015em}.hero-actions{display:flex;align-items:center;gap:12px;margin-top:32px}.hero-actions .glass{min-height:50px;padding:0 21px;font-size:14px}.hero-actions .secondary{background:rgba(255,255,255,.045)}.note{margin-top:22px;color:#777984;font-size:12px;letter-spacing:.015em}
+    .visual{position:relative;min-height:500px;display:grid;place-items:center}.orb{position:absolute;width:370px;height:370px;border-radius:50%;background:linear-gradient(145deg,rgba(144,112,255,.18),rgba(143,109,255,.015) 65%);filter:blur(8px)}.mockup{position:relative;width:min(100%,465px);padding:11px;border:1px solid rgba(255,255,255,.19);border-radius:25px;background:linear-gradient(140deg,rgba(255,255,255,.14),rgba(255,255,255,.035));box-shadow:0 35px 100px rgba(0,0,0,.48),inset 0 1px rgba(255,255,255,.22);backdrop-filter:blur(24px);transform:rotate(2deg)}.mock-screen{min-height:390px;overflow:hidden;border-radius:17px;background:#111218;border:1px solid rgba(255,255,255,.08)}.mock-top{height:42px;display:flex;align-items:center;gap:5px;padding:0 13px;border-bottom:1px solid rgba(255,255,255,.08)}.mock-top i{width:6px;height:6px;border-radius:50%;background:#555660}.mock-top span{margin-left:auto;margin-right:auto;width:128px;height:14px;border:1px solid rgba(255,255,255,.08);border-radius:99px;background:rgba(255,255,255,.025)}.mock-content{padding:28px 25px}.mock-tag{display:inline-block;padding:6px 9px;border-radius:99px;background:rgba(200,255,98,.1);color:#d4ff9a;font-size:9px;letter-spacing:.12em;text-transform:uppercase}.mock-title{margin:16px 0 10px;font-size:34px;line-height:1.04;letter-spacing:-.06em;font-weight:650}.mock-copy{width:84%;color:#9b9ca5;font-size:11px;line-height:1.6}.mock-button{display:inline-block;margin-top:15px;padding:9px 13px;border-radius:99px;background:#fff;color:#111;font-size:10px;font-weight:700}.mock-image{height:135px;margin-top:24px;position:relative;overflow:hidden;border-radius:12px;background:linear-gradient(135deg,#33315c,#7769b8 53%,#d1a38c)}.mock-image:before,.mock-image:after{content:"";position:absolute;border-radius:50%;filter:blur(1px)}.mock-image:before{width:190px;height:190px;right:24px;top:30px;background:linear-gradient(140deg,#ffdbac,#9a6076 70%);box-shadow:0 0 55px rgba(255,213,180,.28)}.mock-image:after{width:300px;height:70px;left:-32px;bottom:-39px;transform:rotate(-12deg);background:#1d2033;box-shadow:0 -20px 45px rgba(16,14,37,.42)}.float-card{position:absolute;right:-23px;bottom:35px;padding:15px 17px;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:rgba(22,23,31,.72);box-shadow:0 18px 50px rgba(0,0,0,.3);backdrop-filter:blur(16px);transform:rotate(-3deg)}.float-card small{display:block;color:#a1a2ab;font-size:10px}.float-card strong{display:block;margin-top:5px;color:#ddffb0;font-size:20px;letter-spacing:-.04em}.float-card em{font-style:normal;color:#aeb0ba;font-size:10px}
+    .services{padding:96px 0 120px;border-top:1px solid rgba(255,255,255,.08)}.services-heading{max-width:660px;margin:0 auto 46px;text-align:center}.services-heading h2{margin:20px 0 13px;font-size:clamp(36px,5.2vw,58px);line-height:1.04;letter-spacing:-.065em;font-weight:650}.services-heading p{margin:0;color:#a5a7b0;font-size:16px;line-height:1.7}.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.service-card{position:relative;min-height:258px;padding:28px 25px;border:1px solid rgba(255,255,255,.13);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025));box-shadow:inset 0 1px rgba(255,255,255,.1),0 18px 45px rgba(0,0,0,.16);backdrop-filter:blur(18px);transition:transform .2s,border-color .2s}.service-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.28)}.service-icon{display:grid;place-items:center;width:46px;height:46px;border:1px solid rgba(255,255,255,.15);border-radius:15px;background:rgba(255,255,255,.07);color:#f4f4f6}.service-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.service-card h3{margin:24px 0 10px;font-size:22px;letter-spacing:-.045em}.service-card p{max-width:310px;margin:0;color:#a5a7b0;font-size:14px;line-height:1.75}.service-link{display:inline-flex;align-items:center;gap:8px;margin-top:23px;color:#eee;text-decoration:none;font-size:12px;font-weight:600}.service-link span{transition:transform .2s}.service-link:hover span{transform:translate(3px,-3px)}.process{padding:96px 0 120px;border-top:1px solid rgba(255,255,255,.08)}.process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.process-card{min-height:220px;padding:24px 21px;border:1px solid rgba(255,255,255,.13);border-radius:21px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.02));box-shadow:inset 0 1px rgba(255,255,255,.09),0 16px 40px rgba(0,0,0,.14);backdrop-filter:blur(18px)}.process-number{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(255,255,255,.18);border-radius:13px;background:rgba(255,255,255,.08);color:#fff;font-size:13px;font-weight:700}.process-card h3{margin:23px 0 9px;font-size:20px;letter-spacing:-.04em}.process-card p{margin:0;color:#a5a7b0;font-size:13px;line-height:1.75}.about{padding:96px 0 120px;border-top:1px solid rgba(255,255,255,.08)}.about-panel{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:48px;padding:clamp(28px,5vw,58px);border:1px solid rgba(255,255,255,.13);border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.085),rgba(255,255,255,.025));box-shadow:inset 0 1px rgba(255,255,255,.1),0 22px 60px rgba(0,0,0,.18);backdrop-filter:blur(18px)}.about h2{margin:0;font-size:clamp(38px,5.5vw,64px);line-height:1.02;letter-spacing:-.07em;font-weight:650}.about-copy{margin:0;color:#b2b3bc;font-size:clamp(17px,2vw,21px);line-height:1.8;letter-spacing:-.02em}.about-copy strong{color:#fff;font-weight:650}.about-copy span{color:#d7d2ff;font-weight:700;letter-spacing:.04em}    @media(max-width:800px){.wrap{width:min(100% - 36px,600px)}.navbar{height:78px}.brand img{width:38px;height:38px}.nav-links{gap:7px}.nav-links .glass{min-height:38px;padding:0 12px;font-size:11px}.nav-links .hide-mobile{display:none}.hero{min-height:auto;grid-template-columns:1fr;gap:28px;padding:78px 0 60px}.hero-copy{text-align:center}.eyebrow{margin:auto}h1,.lead{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.note{margin-top:18px}.visual{min-height:430px}.mockup{width:min(100% - 22px,430px)}.float-card{right:0}.mock-screen{min-height:355px}.services{padding:78px 0 90px}.service-grid{grid-template-columns:1fr;gap:13px}.service-card{min-height:0;padding:24px}.service-card h3{margin-top:18px}.process{padding:78px 0 90px}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about{padding:78px 0 90px}.about-panel{grid-template-columns:1fr;gap:22px}}
+    @media(max-width:440px){.services{padding:64px 0}.services-heading{margin-bottom:30px}.services-heading p{font-size:14px}.service-card{padding:21px}.process{padding:64px 0}.process-grid{grid-template-columns:1fr}.process-card{min-height:0;padding:22px}.process-card h3{margin-top:17px}.about{padding:64px 0}.about-panel{padding:25px;gap:18px}.about h2{font-size:42px}.about-copy{font-size:16px}}
+    @media(max-width:440px){.wrap{width:calc(100% - 28px)}.brand{gap:6px}.brand span{font-size:14px}.brand img{width:34px;height:34px}.nav-links .glass{padding:0 10px;font-size:10px}.nav-links{gap:5px}h1{font-size:54px}.hero{padding-top:62px}.hero-actions{flex-direction:column}.hero-actions .glass{width:min(100%,260px)}.visual{min-height:375px}.mock-content{padding:23px 18px}.mock-screen{min-height:330px}.mock-title{font-size:29px}.mock-image{height:110px}.float-card{right:-3px;bottom:16px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+      /* Ajustes da paleta: preto e cinza, sem etiquetas com ponto verde */
+    :root{--accent:#c2c3c6;--purple:#a9aaae}
+    .eyebrow{display:none!important}.eyebrow:before{display:none!important}
+    h1{margin-top:0}h1 span{background-image:linear-gradient(100deg,#fff 10%,#d0d0d2 52%,#96979b 100%)}
+    .services-heading h2{margin-top:0}
+    body{background:radial-gradient(ellipse at 74% 26%,rgba(150,150,158,.14),transparent 34%),radial-gradient(ellipse at 20% 88%,rgba(120,120,126,.08),transparent 30%),var(--bg)}
+    .orb{background:linear-gradient(145deg,rgba(190,190,196,.15),rgba(145,145,150,.015) 65%)}
+    .mock-tag{background:rgba(220,220,224,.09);color:#d1d2d5}
+    .mock-image{background:linear-gradient(135deg,#333438,#77797e 53%,#b1b1b3)}
+    .mock-image:before{background:linear-gradient(140deg,#d0d0d0,#77797e 70%);box-shadow:0 0 55px rgba(220,220,220,.2)}
+    .float-card strong{color:#e0e0e2}
+    .about-copy span{color:#e0e0e2}
+      @media(max-width:800px){
+      .hero{gap:32px;padding:64px 0 76px}
+      .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .service-card{min-height:230px}
+      .process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:600px){
+      .wrap{width:calc(100% - 32px)}
+      .navbar{height:auto;min-height:72px;padding:10px 0;gap:8px;flex-wrap:wrap}
+      .brand{flex:0 0 auto}.brand span{display:none}
+      .nav-links{flex:1;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:6px}
+      .nav-links .glass{min-height:36px;padding:0 9px;font-size:10px}
+      .nav-links .hide-mobile{display:none}
+      .nav-links a[href="#sobre"]{display:inline-flex}
+      .hero{padding:58px 0 54px;gap:20px}
+      h1{font-size:clamp(46px,11vw,64px);line-height:1.02}
+      .lead{font-size:16px;line-height:1.7}
+      .hero-actions{margin-top:25px}
+      .visual{min-height:390px}
+      .service-grid,.process-grid{grid-template-columns:1fr}
+      .service-card{min-height:0}
+      .services,.process,.about{padding-top:64px;padding-bottom:72px}
+      .services-heading{margin-bottom:28px}
+      .about-panel{grid-template-columns:1fr;gap:18px;padding:26px}
+    }
+    @media(max-width:360px){
+      .wrap{width:calc(100% - 24px)}
+      .nav-links{gap:4px}
+      .nav-links .glass{padding:0 7px;font-size:9px}
+      h1{font-size:44px}
+      .visual{min-height:350px}
+      .float-card{right:-5px;padding:12px}
+    }
+    .footer{width:min(1160px,calc(100% - 48px));margin:auto;padding:25px 0 32px;border-top:1px solid rgba(255,255,255,.08);text-align:center;color:#888a92;font-size:12px;letter-spacing:.02em}.footer p{margin:0}
+      .whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:1000;display:grid;place-items:center;width:62px;height:62px;border:2px solid rgba(255,255,255,.92);border-radius:50%;background:#25D366;color:#fff;box-shadow:0 8px 28px rgba(0,0,0,.4),0 0 0 5px rgba(37,211,102,.12);transition:transform .2s,box-shadow .2s}.whatsapp-float:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 12px 32px rgba(0,0,0,.45),0 0 0 7px rgba(37,211,102,.18)}.whatsapp-float:focus-visible{outline:3px solid #fff;outline-offset:4px}.whatsapp-float svg{width:31px;height:31px;fill:#fff}
+    @media(max-width:600px){.whatsapp-float{right:17px;bottom:18px;width:56px;height:56px}.whatsapp-float svg{width:28px;height:28px}}
+  </style>
+</head>
+<body>
+  <header class="wrap navbar">
+    <a class="brand" href="#inicio" aria-label="Nextora Digital, início"><img src="assets/nextora-logo.png" alt=""><span>Nextora <b>Digital</b></span></a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a class="glass hide-mobile" href="#inicio">Início</a>
+      <a class="glass" href="#como-funciona">Como funciona</a>
+      <a class="glass hide-mobile" href="#sobre">Sobre</a>
+      <a class="glass cta" href="https://wa.me/559981078616" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="inicio" class="wrap hero">
+    <section class="hero-copy">
+      <div class="eyebrow">Presença digital que cresce</div>
+      <h1><span>Sites que vendem por você.</span></h1>
+      <p class="lead">Criamos sites rápidos, bonitos e pensados para atrair clientes. Para pequenos e grandes negócios que querem vender mais na internet.</p>
+      <div class="hero-actions"><a class="glass cta" href="https://wa.me/559981078616" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 24 24" width="19" height="19" style="margin-right:9px;fill:#25D366"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.57 0 11.92-5.35 11.92-11.93 0-3.19-1.24-6.19-3.48-8.43ZM12.08 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.85 9.85 0 0 1-1.52-5.25c0-5.46 4.45-9.91 9.92-9.91 2.65 0 5.14 1.03 7.01 2.91a9.85 9.85 0 0 1 2.9 7.01c0 5.47-4.45 9.92-9.92 9.92Zm5.44-7.43c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.79-1.49-1.76-1.67-2.06-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.38-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.1 4.48.71.31 1.27.5 1.7.64.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>Orçamento grátis</a></div>
+      <p class="note">Estratégia, design e tecnologia para o seu próximo passo.</p>
+    </section>
+    <section class="visual" aria-label="Prévia de um site desenvolvido pela Nextora">
+      <div class="orb"></div>
+      <div class="mockup"><div class="mock-screen"><div class="mock-top"><i></i><i></i><i></i><span></span></div><div class="mock-content"><span class="mock-tag">Seu negócio, online</span><div class="mock-title">Uma boa ideia<br>merece ser vista.</div><div class="mock-copy">Uma experiência digital pensada para apresentar sua marca e transformar visitas em novos clientes.</div><span class="mock-button">Descubra mais&nbsp; ↗</span><div class="mock-image"></div></div></div></div>
+      <div class="float-card"><small>Presença digital</small><strong>no próximo nível</strong><em>design feito para crescer ↗</em></div>
+    </section>
+  </main>
+  <section class="wrap services" id="solucoes" aria-labelledby="services-title">
+    <div class="services-heading">
+      <div class="eyebrow">Soluções digitais</div>
+      <h2 id="services-title">O site certo para o seu negócio.</h2>
+      <p>Escolha o formato ideal para apresentar sua marca, atrair clientes e vender online.</p>
+    </div>
+    <div class="service-grid">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M8 13h8M8 16h5"/></svg></div>
+        <h3>Site institucional</h3>
+        <p>Apresente seus produtos online, a qualquer hora.</p>
+        <a class="service-link" href="https://wa.me/559981078616" target="_blank" rel="noopener noreferrer">Quero um site institucional <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></div>
+        <h3>Loja virtual</h3>
+        <p>Venda seus produtos online, a qualquer hora.</p>
+        <a class="service-link" href="https://wa.me/559981078616" target="_blank" rel="noopener noreferrer">Quero uma loja virtual <span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h6M7 16h8"/></svg></div>
+        <h3>Landing page</h3>
+        <p>Uma página focada em um objetivo, como captar contatos e vender um produto.</p>
+        <a class="service-link" href="https://wa.me/559981078616" target="_blank" rel="noopener noreferrer">Quero uma landing page <span aria-hidden="true">↗</span></a>
+      </article>
+    </div>
+  </section>
+  <section class="wrap process" id="como-funciona" aria-labelledby="process-title">
+    <div class="services-heading">
+      <div class="eyebrow">Simples do começo ao fim</div>
+      <h2 id="process-title">Como funciona</h2>
+      <p>Um processo claro, com você participando de cada etapa.</p>
+    </div>
+    <div class="process-grid">
+      <article class="process-card"><span class="process-number">01</span><h3>Conversa</h3><p>Você conta suas ideias e seus objetivos.</p></article>
+      <article class="process-card"><span class="process-number">02</span><h3>Proposta</h3><p>Enviamos seu orçamento em até 24h.</p></article>
+      <article class="process-card"><span class="process-number">03</span><h3>Criação</h3><p>Desenhamos e desenvolvemos o site com você acompanhando.</p></article>
+      <article class="process-card"><span class="process-number">04</span><h3>Entrega</h3><p>Seu site no ar, com suporte para dúvidas.</p></article>
+    </div>
+  </section>
+  <section class="wrap about" id="sobre" aria-labelledby="about-title">
+    <div class="about-panel">
+      <h2 id="about-title">Por que a Nextora?</h2>
+      <p class="about-copy">Quase metade das empresas brasileiras ainda não tem site próprio. Nossa missão é ajudar negócios pequenos e grandes a abrir mais um leque de vendas: <span>A INTERNET.</span></p>
+    </div>
+  </section>
+  <footer class="footer"><p>Nextora | Criação de Sites, © 2026</p></footer>
+  <a class="whatsapp-float" href="https://wa.me/559981078616" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Nextora pelo WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.57 0 11.92-5.35 11.92-11.93 0-3.19-1.24-6.19-3.48-8.43ZM12.08 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.72.97.99-3.63-.24-.37a9.85 9.85 0 0 1-1.52-5.25c0-5.46 4.45-9.91 9.92-9.91 2.65 0 5.14 1.03 7.01 2.91a9.85 9.85 0 0 1 2.9 7.01c0 5.47-4.45 9.92-9.92 9.92Zm5.44-7.43c-.3-.15-1.76-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.79-1.49-1.76-1.67-2.06-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.38-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.1 4.48.71.31 1.27.5 1.7.64.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
+  </a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
